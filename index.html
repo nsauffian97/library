@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">My Library</div>
+        <div class="newBookButton">
+            <button id="newBookBtn" onclick="openNewBookForm()">Add a New Book</button>
+        </div>
+    </div>
+    <form class="new-Book-Form" id="newBookForm">
+        <label for="new-book-title">Title:</label>
+        <input type="text" id="new-book-title" name="new-book-title"><br>
+        <label for="new-book-author">Author:</label>
+        <input type="text" id="new-book-author" name="new-book-author"><br>
+        <label for="new-book-pagenum">Page Numbers:</label>
+        <input type="text" id="new-book-pagenum" name="new-book-pagenum"><br>
+        <label for="new-book-read">Read?:
+        <input type="checkbox" id="new-book-read" name="new-book-read"><br>
+        </label>
+
+        <button type="button" class="submit-btn" onclick="addBookToLibrary()">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeNewBookForm()">Cancel</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body,html{
+    height: 0;
+}
+
+.new-Book-Form {
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.books{
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.bookInfo{
+    align-items: center;
+    padding: 15px;
+}
